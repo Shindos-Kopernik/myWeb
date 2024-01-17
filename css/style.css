@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, sans-serif; /*  Шрифт  */
+  font-size: 18px;
+  line-height: 1.5; /* Межстрочный интервал. 25px; -- лучше ипользовать значения как в примере соотношение.*/
+  color: rebeccapurple;
+  background-color: #eee;
+  background-image: url("../img/react.jpeg");
+}
+
+.title {
+  text-align: center; /* Текст по центру */
+  font-weight: 700;
+  letter-spacing: 4px; /* отступы между буквами */
+  text-decoration: underline; /* Подчеркнутый текст */
+  text-transform: uppercase; /* Текст заглавными буквами */
+  /* text-indent: 20px;  "Красная строка"*/
+}
+.justify {
+  text-align: justify; /* выравнивание текста */
+  font-weight: bold; /* Жирный шрифт */
+  font-style: italic; /* Наклонный шрифт */
+  text-transform: capitalize; /* Первые буквы в тексте заглавными */
+}
+.ul1 {
+  list-style-type: circle; /* Изменить маркер списка */
+  list-style-position: inside; /* Отступ текста от маркера */
+}
+
+ol {
+  list-style-type: decimal-leading-zero; /* Изменить маркер списка */
+}
+
+.table {
+  border-collapse: collapse; /* работа с ячейками, чтоы не было отделения*/
+  border: 1px solid black; /* толщина линии таблицы, цвет линии - черный */
+  width: 100%; /* Ширина таблицы */
+  table-layout: fixed; /* Одинаковые размеры ячеек */
+}
+
+.table th {
+  text-align: left; /* Выравнивание по левому краю */
+  padding: 5px; /* 5 10 8 7 - эта запись всех строн начиная с верху и по часовой стрелке,
+                  либо отделььно для каждой стороны padding-top, padding-right итд. */
+  color: red;
+}
+.table td {
+  padding: 5px; /* Отступ текста в таблице */
+  border: 1px solid black;
+}
+
+.table tfoot td {
+  text-align: right; /* Tекст не сместился вправо */
+}
+
+.text-red {
+  margin: 10px; /* с верху и снизу не применяться */
+  display: block; /* Из строчного элемента сделает блочный */
+  color: red;
+  font-weight: 700;
+  font-style: italic;
+}
+/*
+.content {
+  width: 200px;
+  height: 200px; /* Высота используется редко, т.к. контент может не поместиться */
+/*  margin: 10px 20px; /* Отступы работает также, как padding и применяется только для строчных элементов см. пример .text-red 
+}
+*/
+
+/* Выравнива1ние всей страницы по центру экрана */
+.page {
+  width: 900;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Post */
+.post {
+  width: 700;
+  height: 400;
+  padding: 15px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+
+  /* Part #1 */
+  background-color: #fff; /* цвет фона */
+  background-image: url("../img/react.png"); /* Картинка фона*/
+  background-repeat: no-repeat; /* Не повторять картинку */
+  background-size: 100% auto; /* Растянуть по ширине на 100% по высоте авто либо cover*/
+  background-position: center; /* Смена позиции картинки */
+}
+
+/* Part #2 Задаем фон через одно значение */
+/*
+  background: #fff url("../img/react.png") no-repeat center 
+  background-size: cover;
+
+.post-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #1566c6;
+  text-align: center;
+}
+*/
+.post-text {
+  color: #000;
+}
+.post-text p {
+  margin: 0 0 10px 0;
+}
+/* Gradient*/
+.gradient {
+  width: 700px;
+  height: 300px;
+  background-image: linear-gradient(to top, #fff, #000, #fff);
+  margin: 0 auto;
+}
+
+/* Form */
+
+.form {
+  width: 500px;
+  padding: 20px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.form-group {
+  margin: 15px;
+}
+
+.form-input {
+  display: block;
+  padding: 5px;
+
+  border: 2px solid #000;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.form-fieldset {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #000;
+  
+}
+
+.form-title {
+  margin: 0 0 15px;
+}
+
+.form-textarea {
+  width: 200px;
+  height: 150px;
+  padding: 5px;
+  border: 2px solid #000;
+  outline: 10px solid red; /* Не влияет на размер блока */
+  outline-offset: 5px; /* Обводка будет иметь отступ от блока */
+  font-family: Arialm, sans-serif;
+  font-size: 15px;
+}
+
+.form-textarea:focus {
+  background-color: #bddbff;
+}
+
+.link {
+  color: #1d76dd;
+  text-decoration: none;
+}
+
+.link:visited { /* Обязательно писать до hover, меняет цвет посещенных ссылок */
+  color: #7922d1;
+}
+
+.link:hover { /* Псевдокласс: При наводе на элемент */
+  text-decoration: underline;
+  
+}
+
+.btn {
+  padding: 5px 10px;
+  background-color: #43ac14;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover,
+.btn:focus 
+  background-color: #3a9134;
+  cursor: pointer;
+}
+
+.btn:active { /* Действие в момент нажатия, писать после hover*/
+  background-color: #2c760a;
+}
+ 
+/* .btn:desabled {} Псевдокласс для не активных кнопок, после hover. cursor: not-allowed; и атрибут в html desabled */
+
+form-input:focus {
+  outline: none; /* Убрали стандартную браузерную обводку */
+  background-color: #bddbff;
+}
