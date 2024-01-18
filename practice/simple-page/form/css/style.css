@@ -7,3 +7,12 @@ body {
   line-height: 1.5;
   background-color: #0d326d;
 }
+
+/* Auth */
+
+.auth {
+  width: 300px;
+  padding: 20px;
+margin: 20px auto;
+  background-color: #fff;
+}
