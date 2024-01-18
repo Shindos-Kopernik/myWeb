@@ -11,8 +11,81 @@ body {
 /* Auth */
 
 .auth {
-  width: 300px;
+  width: 280px;
   padding: 20px;
-margin: 20px auto;
+  margin: 20px auto;
   background-color: #fff;
+}
+
+.auth-title {
+  margin: 0 0 15px;
+  font-size: 20px;
+  color: #c61919;
+  text-align: center;
+}
+
+/* Input */
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input {
+  display: block;
+  padding: 8px 10px;
+  width: 258px;
+
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #28cbd1;
+}
+
+/* Select */
+
+.select {
+  display: block;
+  padding: 8px 10px;
+  width: 280px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.select:focus {
+  outline: 0;
+  border-color: #28cbd1;
+}
+
+/* Button */
+
+.btn {
+  display: block;
+  font-family: inherit;
+  font-size: 15px;
+  width: 280px;
+  border: none;
+  background-color: #4bb91b;
+  padding: 10px;
+  color: #fff;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #fff555;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #ff9999;
 }
