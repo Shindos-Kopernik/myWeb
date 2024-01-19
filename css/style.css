@@ -207,3 +207,70 @@ form-input:focus {
   outline: none; /* Убрали стандартную браузерную обводку */
   background-color: #bddbff;
 }
+
+/* Position.html */
+/* Body */
+
+.position-body {
+  margin: 0;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Modal */
+
+.modal {
+  width: 500px;
+  height: 300px;
+  padding: 15px;
+  background-color: #eee;
+  margin: 20px auto;
+  position: relative; /* Теперь элемент .square будет позиционироваться относительно элемента .modal */
+}
+
+.modal-title {
+  font-family: Arial, sans-serif;
+  color: #c643f5;
+  margin: 0;
+}
+
+/* Square */
+
+.square {
+  width: 50px;
+  height: 50px;
+
+  background-color: #333;
+  z-index: 2; /* Меняет позицию элемента по оси Z, и в данном случаи измениться приоритет */ 
+
+  position: absolute; /* При absolute мы сможем менять позицию нашего квадрата с помощью: top, right, bottom, left. position: static - убирает позиционирование; */
+  top: -10px;
+  right: -10px;
+}
+
+.square.red {
+  background-color: #d41717;
+  right: -15px;
+  top: -5px;
+  z-index: 1;
+}
+
+.square-fixed {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  margin-top: -25px; /* Сделает позицию элемента ровно по центру */
+  margin-left: -25px;
+  position: fixed; /* Позицианирует документ относительно нашего окна просмотра, не смещается при скроле и position: relative; на него не влияет, но лучше, чтобы он был прямым потомком тега <body>. */
+ top: 50%;
+  left: 50%;
+}
+
+
+
+
+
+

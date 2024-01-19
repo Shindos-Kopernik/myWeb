@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+   
+  background-color: #eee;
+}
+
+/* Composition */
+
+.composition {
+  width: 650px; /* Взяли из ширины картинки */
+  height: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden; /* Скрывает часть элемента, который вылезает за границу композиции */
+}
+
+/* Road */
+
+.road {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Car */
+
+.car {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+  z-index: 3;
+}
+
+/* Tree */
+
+.tree {
+  position: absolute;
+  right: 50px;
+  bottom: 80px;
+  z-index: 2;
+}
+
+/* Cloud */
+
+.cloud {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  z-index: 2;
+}
+
+.cloud-2 {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+  z-index: 1;
+}
+
+.cloud-3 {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
