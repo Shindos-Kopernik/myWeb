@@ -269,6 +269,69 @@ form-input:focus {
   left: 50%;
 }
 
+/* Pseudo */
+
+.body-pseudo {
+  background: #fff;
+}
+
+.pseudo-title {
+  margin: 0;
+position: relative;
+
+  font-size: 30px;
+  text-align: center;
+}
+
+/* 
+ Если свойства совпадают то можно объединять 
+.pseudo-title::before,
+.pseudo-title::after {
+  color: red;
+  font-size: 12px;
+}
+*/
+/*
+.pseudo-title::before {
+  content: '1. '; /* Обязательное свойство для before, вставка до контента */ /* 
+  }
+*/
+
+.pseudo-title:before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 5px;
+   background-color: #274fbc;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -25px;
+}
+
+.pseudo-title:after { /* Вставка за контентом */ 
+    content: ''; 
+    display: block;
+  width: 50px;
+  height: 5px;
+  margin: 5px auto;
+  background-color: red;
+   }
+
+.pseudo-text p:first-letter { /* Другой цвет первой буквы в новом абзаце */
+color: red;
+  font-size: 50px;
+}
+
+.pseudo-text p:first-line { /* Другой цвет первой строки абзаца */
+  color: yellow;
+}
+
+
+
+
+
+
 
 
 
