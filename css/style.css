@@ -7,6 +7,15 @@ body {
   background-image: url("../img/react.jpeg");
 }
 
+/* Сразу прописываем алгорит подсчета для всех элементов*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
 .title {
   text-align: center; /* Текст по центру */
   font-weight: 700;
@@ -154,8 +163,11 @@ ol {
 .form-textarea {
   width: 200px;
   height: 150px;
+  min-height: 200px; /* Мин. уменьшение текстового поля по высоте */
+  max-height: 350px;
   padding: 5px;
   border: 2px solid #000;
+  resize: vertical; /* Растягивание текстого поля по вертикали, none - запретить */
   outline: 10px solid red; /* Не влияет на размер блока */
   outline-offset: 5px; /* Обводка будет иметь отступ от блока */
   font-family: Arialm, sans-serif;
@@ -185,7 +197,9 @@ ol {
   background-color: #43ac14;
   color: #fff;
   border: 1px solid #000;
-}
+    /* Плавность перехода */
+  transition: background 0.2s linear, border-color 0.2s linear; 
+
 
 .btn:focus {
   outline: none;
@@ -195,6 +209,7 @@ ol {
 .btn:focus 
   background-color: #3a9134;
   cursor: pointer;
+  border-color: blue ;
 }
 
 .btn:active { /* Действие в момент нажатия, писать после hover*/
@@ -327,10 +342,28 @@ color: red;
   color: yellow;
 }
 
+/* CSS3 */
 
+.element {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box; /* Меняет алгоритм подсчета размера блока и padding: 20; не влият на размер блока и идет во внутрь. См.строку №10 */
 
+  background-color: #ccc;
+  /* Закругление углов нашего квадрата, можно в процентах */
+ /* border-radius: 100px 15px 25px 35px / 50px 5px 5px 5px; */ 
+  border-radius: 20px;
+  /* Тени элементов. Состоит из 4-х  параметров и цвета: 1. Сдвиг по оси х 2. по y, 3. Размытие 4. Размер тени 5. Цвет элемента */ 
+  box-shadow: -10px 5px 20px  #a2a2a2 inset, -10px 5px 20px #a2a2a2 ; /* inset - внут. тень, а через запятую указана внешняя тень */
+  opacity: 0.1; /* Не прозрачность элемента от 0 до 1 */
+}
 
-
+.element-title {
+  margin: 0;
+  text-shadow: -5px 5px 5px #a2a2a2;
+}
 
 
 

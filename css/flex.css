@@ -1,0 +1,29 @@
+/* Page */
+.page {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.header {
+  padding: 20px;
+
+  background-color: #eee;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+}
+
+.main {
+  width: 400px;
+  background-color: #ccc;
+}
+
+.footer {
+  background-color: #eee;
+}
