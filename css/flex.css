@@ -4,26 +4,64 @@
   margin: 20px auto;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Header */
+
 .header {
+  display: flex;
+  flex-direction: column; /* Каждый элемент ведет себя, как колонка */
+  justify-content: space-between; /* Служит для выравнивания элементов в контейнере по умолчанию row, можно не прописывать */
+  align-items: center; /* Выравнивание элементов относительо контейнера */
   padding: 20px;
 
   background-color: #eee;
 }
+
+.header-item {
+/* width: 33.33333%;  */
+  flex-basis: 0;
+  flex-grow: 1; /* Рост ячейки */
+}
+
+header-logo {
+  order: 2; /* Порядок элементов для просмотра на мобильных устройствах. Нужно указывать для всех элементов */
+}
+
+.header-tel {
+  order: 1;
+}
+
+.header-lang {
+  order: 3;
+}
+
+
+/* Content */
 
 .content {
   display: flex;
 }
 
 .sidebar {
-  width: 200px;
+ width: 100px; 
+/* flex-basis: 20%; работает также, как и width */
   background-color: #333;
 }
 
 .main {
-  width: 400px;
+  /* width: 400px; */
+  flex-basis: 60%;
+  padding: 20px;
   background-color: #ccc;
+
 }
 
 .footer {
+  padding: 20px;
   background-color: #eee;
 }
