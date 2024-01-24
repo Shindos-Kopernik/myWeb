@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #121212;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  margin: 20px auto;
+}
+
+.text {
+  margin-bottom: 40px;
+}
+
+/* Доступ к прямым потомкам */
+
+.text > p {
+  color: red;
+}
+
+/* Первый элемент по типу */
+
+.text > p:first-of-type {
+  color: #000;
+}
+
+/* Доступ к элементу, который уже имеет атрибут */
+
+.text span[title] {
+  text-decoration: underline;
+  color: #eee;
+}
+
+.list {
+  margin-bottom: 40px;
+}
+
+/* Псевдокласс, который изменяет только первый элемент в блоке */
+.list li:first-child {
+  color: blue;
+}
+/* Последний элемент */
+
+.list li:last-child {
+  color: red;
+}
+/* Изменить конкретный элемент в списке, (odd) - красит все нечетные эл-ты, (even) - четные. */
+
+.list li:nth-child(2) {
+  color: #eee555;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #eee;
+  color: blue;
+}
+
+.label {
+  color: #eee;
+}
+
+/* Получение доступа к следующему элементу */
+
+.checkbox:checked + .label {
+  color: #000;
+}
