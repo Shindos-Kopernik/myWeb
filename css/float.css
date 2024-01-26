@@ -1,0 +1,56 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  color: #121212;
+}
+
+.container {
+  width: 800px;
+  margin: 20px;
+
+  background-color: #eee;
+}
+
+.content:before,
+.content:after {
+  content: "";
+  display: table;
+  width: 1;
+}
+
+.content:after {
+  clear: both;
+}
+.clearfix {
+  /* Класс использовался для убирания обтикания*/
+}
+.main {
+  float: left; /* Прижимает блок к левому краю, остальные блоки будут обтекать его справа */
+  width: 70%;
+}
+
+.sidebar {
+  float: left;
+  background-color: #ccc;
+  width: 30%;
+}
+
+.title {
+  margin: 0 0 1rem;
+
+  font-size: 2rem;
+  color: #121212;
+}
+
+.footer {
+  padding: 10px;
+  clear: both; /* Очищаем float преведущих элементов, можно не писать т.к. мы их прописали в псевдоклассах */
+  background-color: #333;
+  color: #fff;
+}

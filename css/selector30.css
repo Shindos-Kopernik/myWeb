@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #121212;
+}
+
+/* ID имеет приоритет над классами(селекторами) */
+/*
+#container {
+  background-color: #111;
+}
+*/
+
+.container {
+  width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+
+  background-color: #eee;
+}
+
+/* Селектор со вложенностью h1 будет приоритетнее, чем class="title"
+
+.container h1 {
+  color: red;
+}
+
+.title {
+  color: green;
+}
+
+!important; - имеет весь больше чем id и перебивает ввсе. Его обычно не используют. Если используют скорее всего, что-то сделано не правильно. Его перебивает только style="black", если он прописан в самом атрибуте html.
+
+.title {
+color: blue;
+}
+
+*/

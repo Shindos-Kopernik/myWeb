@@ -1,10 +1,16 @@
+@font-face {
+ 
+  font-family: 'Comforter';
+  src: url("../fonts/Comforter-Regular.woff") format('woff'),
+      url("../fonts/Comforter-Regular.woff2") format('woff2');
+}
+
 body {
-  font-family: Arial, sans-serif; /*  Шрифт  */
+  font-family:  font-family: 'Montserrat', sans-serif;/*  Шрифт  */
   font-size: 18px;
   line-height: 1.5; /* Межстрочный интервал. 25px; -- лучше ипользовать значения как в примере соотношение.*/
   color: rebeccapurple;
   background-color: #eee;
-  background-image: url("../img/react.jpeg");
 }
 
 /* Сразу прописываем алгорит подсчета для всех элементов*/
@@ -17,8 +23,8 @@ body {
 
 
 .title {
+  font-family: 'Comforter', sans-serif;;
   text-align: center; /* Текст по центру */
-  font-weight: 700;
   letter-spacing: 4px; /* отступы между буквами */
   text-decoration: underline; /* Подчеркнутый текст */
   text-transform: uppercase; /* Текст заглавными буквами */

@@ -1,0 +1,113 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #121212;
+
+  background-color: #f4f4f4;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%; /* Adapted */
+  max-width: 800px; /* Adapted */
+  padding: 1rem;
+  margin: 20px auto;
+
+  background-color: #eee;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; /* Adapted
+-------------------------------------------------
+Разрешаем элементам перепрыгивать на новую строку */
+}
+
+.flex-item {
+  height: 100px;
+  flex-grow: 1; /* Растяжка на всю ширину свободного пространства */
+  flex-basis: 0;
+}
+
+.red {
+  background-color: #e03333;
+}
+
+.green {
+  background-color: #84b10d;
+}
+
+.blue {
+  background-color: #0d59d3;
+}
+
+.title {
+  margin: 0 0 1rem;
+
+  font-size: 2rem;
+  color: #121212;
+}
+
+/* Media */
+/* Adapted */
+/* Media запросы следует писать от большего к меньшему */
+
+@media (max-width: 600px) {
+  .container {
+    /*
+    background-color: #ccc;
+  }
+*/
+  .flex-item {
+    flex-basis: 100%;
+  }
+
+  /* Меняем порядок элементов на моб.устройствах */
+
+  .red {
+    order: 1;
+  }
+
+  .blue {
+    order: 2;
+  }
+
+  .green {
+    order: 3;
+  }
+}
+
+  @media (max-height: 300px) {
+.flex-item {
+      height: 250px;
+    }
+  }
+/*
+  @media (orientation: landscape) {
+    .flex-item {
+      height: 220px;
+    }
+  }
+*/
+
+  /* Можно комбинировать правила */
+
+  @media (max-height: 250px) and (orientation: landscape) {
+.flex-item {
+      height: 134px;
+    }
+  }
+
+  
